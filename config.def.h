@@ -1,5 +1,6 @@
 /* macro for conveniently specifying pathu and pathc below */
-#define PATH(name)                      "<path to the folder containing block scripts>/"name
+// #define PATH(name)                      "/home/injamul/.local/src/dwmblocks/blocks/"name
+#define PATH(name)                      "/home/injamul/.dwm/"name
 
 /* buffer size for capturing output of the programs used for updating blocks */
 #define CMDOUTLENGTH                    50
@@ -43,9 +44,10 @@ static const char delimiter[] = { ' ', ' ', ' ', DELIMITERENDCHAR };
 
 static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
-        { PATH("calendar.sh"),          NULL,                           30,             1},
-        { PATH("volume.sh"),            PATH("volume_button.sh"),       0,              2},
-        { PATH("cpu_temp.sh"),          PATH("cpu_temp_button.sh"),     1,              4},
-        { PATH("battery.sh"),           PATH("battery_button.sh"),      30,             3},
+        { PATH("defaultscripts/calendar.sh"),          NULL,                           1,             1},
+        { PATH("defaultscripts/volume.sh"),            PATH("defaultscripts/volume_button.sh"),       0,              2},
+//        { PATH("scripts/pacupdate"),            	NULL,       	360,               9},
+        { PATH("defaultscripts/cpu_temp.sh"),          PATH("defaultscripts/cpu_temp_button.sh"),     1,              4},
+        { PATH("defaultscripts/battery.sh"),           PATH("defaultscripts/battery_button.sh"),      30,             3},
         { NULL } /* just to mark the end of the array */
 };
