@@ -8,16 +8,16 @@ static const Block blocks[] = {
 //	{" 📦 ", "~/.dwm/scripts/pacupdate",		        360,		        9},
 
 //	{" 💻 ", "~/.dwm/scripts/memory",	                6,		            1},
-	{" 💻 ", "~/.dwm/scripts/nettraffic",	            1,		            1},
-	{" 💻 ", "~/.dwm/scripts/cpu",                      5,                  3},
-	{" 💻 ", "~/.dwm/defaultscripts/cpu_temp.sh",       5,                  3},
+	{" ", "~/.dwm/scripts/nettraffic",	            1,		            1},
+	{"", "~/.dwm/scripts/cpu",                      5,                  3},
+	{"", "~/.dwm/defaultscripts/cpu_temp.sh",       5,                  3},
 
 
 //	{" 🔊 ", "~/.dwm/scripts/volume",			        10,		            15},
 
-    {" 🔋 ", "~/.dwm/defaultscripts/battery.sh",        10,                 2},
+    {"", "~/.dwm/defaultscripts/battery.sh",        10,                 2},
 
-	{" 🕑 ", "~/.dwm/defaultscripts/calendar.sh",		1,		            0},
+	{"", "~/.dwm/defaultscripts/calendar.sh",		1,		            0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
